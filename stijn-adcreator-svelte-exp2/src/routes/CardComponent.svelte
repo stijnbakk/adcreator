@@ -1,15 +1,17 @@
 <script lang="ts">
-	export let title: string;
-	export let canvasWidth: number = 500;
-	export let canvasHeight: number = 350;
+	export let componentConfig;
 </script>
 
 <div
 	id="container"
-	style={`width: ${canvasWidth}px; height: ${canvasHeight}px`}
-	class="canvas flex bg-purple-50"
+	style={`width: ${componentConfig.canvas.width}px; height: ${componentConfig.canvas.height}px; background-color: ${componentConfig.canvas.backgroundColor}`}
+	class={`canvas relative flex border border-black`}
 >
-	<h1>{title}</h1>
+	<h1 class="absolute top-10 left-10">
+		{#each componentConfig.items as cardItem}
+			<p>{cardItem.value}</p>
+		{/each}
+	</h1>
 </div>
 
 <style>
