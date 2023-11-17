@@ -1,7 +1,5 @@
 <script lang="ts">
-	import { goto } from '$app/navigation';
-	import { page } from '$app/stores';
-	import CardComponent from './CardComponent.svelte';
+	// import CardComponent from './download/CardComponent.svelte';
 
 	let title: string = 'Some title';
 	let canvasWidth: number = 500;
@@ -79,7 +77,7 @@
 <div class="grid grid-cols-2 container mx-auto py-6 gap-3">
 	<div>
 		<h1 class="font-bold text-2xl mb-4">Component</h1>
-		<CardComponent {componentConfig} />
+		<!-- <CardComponent {componentConfig} /> -->
 	</div>
 
 	<div>
