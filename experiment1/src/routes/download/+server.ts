@@ -21,7 +21,7 @@ export const POST: RequestHandler = async ({ request }) => {
 		fonts: [
 			{
 				name: 'Typewriter',
-				url: `http://localhost:5173/TYPEWR__.TTF`,
+				url: `http://adcreator313.vercel.app/TYPEWR__.TTF`,
 				weight: 400,
 				style: 'normal'
 			}
